@@ -68,5 +68,10 @@ public class BookController {
     	repository.deleteById(bookId);
         return "redirect:../booklist"; 
     }
+	
+	@RequestMapping(value="/login")
+	public String login() {
+		return "login";
+	}    
 
 }
